@@ -14,6 +14,7 @@ class DeafGrandma
     loop do
       user_input = get_user_input
       p speak(user_input)
+      exit if @bye_counter == 3
     end
   end
 
